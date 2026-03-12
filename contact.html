@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+        <title>cpet</title>
+    <meta name="description" content="犬専用商品を販売しているペット用品会社です
+    ">
+    <meta name="viewport" content="width=devise-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Kiwi+Maru&family=M+PLUS+Rounded+1c&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+    <body>
+        <header id="header">
+<h1 class="logo">
+    <a href="index.html">
+    <img src="images/logo.jpg"  alt="logo">
+    </a>
+</h1>
+
+<!-- ハンバーガー（PCでは非表示） -->
+<div class="header-right">
+    <a href="cart.html" class="cart-link">
+      <img src="images/cart.jpeg" alt="カート">
+    </a>
+
+    <button class="hamburger" type="button" aria-label="メニュー">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+<nav class="navi">
+<ul class="menu">
+    <li><a href="product.hrml">商品一覧</a></li>
+    <li><a href="index.html#about">Cpetについて</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+    <li><a href="cart.html"><img src="image/cart.jpeg" alt="カート"></a></li>
+</ul>
+</nav>
+<!-- ハンバーガー用メニュー -->
+<div class="drawer" id="drawer">
+  <button class="drawer-close">×</button>
+
+  <nav class="drawer-nav">
+    <a href="index.html">トップページ</a>
+    <a href="product.hrml">商品一覧</a>
+    <a href="index.html#about">Cpetについて</a>
+    <a href="index.html#company">会社概要</a>
+     <a href="contact.html">お問い合わせ</a>
+  </nav>
+</div>
+</header>
+<div class="drawer-overlay"></div>
+
+
+    <div class="contact-bg">
+  <h2 class="contact-title">
+    お問い合わせ
+    <span>CONTACT</span>
+  </h2>
+ 
+        <div class="contact-area inner">
+            <p class="contact-message">お問い合わせ、ご要望等がございましたら、<br class="sp-only">お気軽にお問い合わせください。</p>
+            
+            <div class="contact-inner">
+                <form method="post">
+                    <table class="contact-table">
+
+
+
+                        <tr class="table-list">
+                            <th>
+                                <label for="name">お名前</label>
+                            </th>
+                            <td>
+                                <input type="text" name="yourname" id="name" placeholder="お名前をご入力ください" class="input-area" autocomplete="name">
+                            </td>
+                        </tr>
+
+
+
+                        <tr class="table-list">
+                            <th><label for="furigana">ふりがな</label></th>
+                            <td>
+                                <input type="text" name="yourname" id="furigana" placeholder="ふりがなをご入力ください" class="input-area">
+                            </td>
+                        </tr>
+
+
+                        <tr class="table-list">
+                            <th><label for="mail">メールアドレス</label></th>
+                            <td>
+                                <input id="mail" type="email" name="mail" placeholder="メールアドレスをご入力ください" class="input-area" autocomplete="email">
+                            </td>
+                        </tr>
+
+
+
+                        <tr class="table-list">
+                            <th><label for="comment">お問い合わせ内容</label></th>
+                            <td>
+                                <textarea id="comment" name="comment"></textarea>
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+
+
+
+                <input type="submit" value="送信する" class="submit-button">
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <img src="images/paws2.png" alt="肉球" class="paws-img">
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const closeBtn  = document.querySelector(".drawer-close");
+  const overlay   = document.querySelector(".drawer-overlay");
+
+  function closeDrawer(){
+    document.body.classList.remove("drawer-open");
+  }
+
+  hamburger.addEventListener("click", () => {
+    document.body.classList.toggle("drawer-open");
+  });
+
+  closeBtn.addEventListener("click", closeDrawer);
+  overlay.addEventListener("click", closeDrawer);
+</script>
+
+
+    </body>
+</html>
