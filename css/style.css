@@ -574,14 +574,14 @@ padding-top: 40px;
  left: 0px;
 z-index: 1;
 }
+  
 img.banner-towel{
  position:absolute;
   right:0;
   bottom:0;
   width:30%;
   max-width:110px;
-}
-}
+}}
 
 
 @media (max-width:480px){
