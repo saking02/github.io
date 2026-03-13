@@ -575,10 +575,11 @@ padding-top: 40px;
 z-index: 1;
 }
 img.banner-towel{
- position: absolute;
- bottom: 0px;
- right: 0px;
- width: 150px;
+ position:absolute;
+  right:0;
+  bottom:0;
+  width:30%;
+  max-width:110px;
 }
 }
 
@@ -668,13 +669,14 @@ padding-top: 40px;
  left: 0px;
 z-index: 1;
 }
+  
 img.banner-towel{
- position: absolute;
- bottom: 0px;
- right: 0px;
- width: 90px;
-}
-}
+ position:absolute;
+  right:0;
+  bottom:0;
+  width:30%;
+  max-width:80px;
+}}
 
 .container{
   display: flex;
