@@ -7,7 +7,7 @@ margin: 0;
  letter-spacing: 0.05em;
  overflow-x: hidden;
  background-color: #fff7e9;
-}
+padding-top: 100px;}
 
 html{
     font-size: 100%;
@@ -28,9 +28,11 @@ a{
     background-color: #ffffff;
     align-items: center;
     padding: 0 20px;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
-
 #header.logo{
     width: 100%;
 max-width: 100px;
