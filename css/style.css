@@ -165,8 +165,6 @@ a{
     left: 0;
     z-index: 1000;
 }
-
-
 #header.logo{
     width: 100%;
 max-width: 100px;
@@ -211,14 +209,20 @@ font-weight: 400;
 }
 
 @media (min-width: 481px) and (max-width: 768px){
-
-  #header{
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-.logo img{
+#header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100px;
+  background:#fff;
+  z-index:1000;
+  box-sizing:border-box;
+}.logo img{
   width: 110px;  
   height: auto;
 }
