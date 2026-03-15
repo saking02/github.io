@@ -6,7 +6,11 @@ body{
 font-weight: 400;
 margin: 0;
  letter-spacing: 0.05em;
-padding-top: 100px;}
+ padding-top: 100px;
+  background-color:#FFF7E9;
+      overflow-x: hidden;
+}
+
 
 .mainvisual{
 position: relative;
@@ -626,7 +630,6 @@ img.banner-towel{
   color: #fff;
   font-size: 16px;
 }
-
 .banner-price {
   position: absolute;
   bottom: 10px;
