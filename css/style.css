@@ -226,44 +226,43 @@ font-weight: 400;
   height: auto;
 }
   
-  .navi{
-    display:none;
+.navi{
+  display:none;
   }
 
-  /* カート＋ハンバーガー */
-  .header-right{
-    margin-right: 15px;
-    display: flex;
-    flex-direction: row;   
-    align-items: center;
-    gap: 13px; 
+/* カート＋ハンバーガー */
+.header-right{
+margin-right: 15px;
+ display: flex;
+flex-direction: row;   
+align-items: center;
+gap: 13px; 
 }
 
-  .cart-link img{
-    width: 28px;
-    height: auto;
-    display:block;
-  }
+.cart-link img{
+width: 28px;
+height: auto;
+display:block;
+}
 
-  .hamburger{
-    display:flex;
-    flex-direction: column;
-    gap: 6px;
-    background:none;
-    border:none;
-    cursor:pointer;
-    padding: 0;
-  }
+.hamburger{
+display:flex;
+flex-direction: column;
+gap: 6px;
+background:none;
+border:none;
+cursor:pointer;
+padding: 0;
+}
 
-  .hamburger span{
-    width: 28px;
-    height: 2px;
-    background:#000;
-    display:block;
-  }}
+.hamburger span{
+width: 28px;
+height: 2px;
+background:#000;
+display:block;
+}}
 
 @media (max-width: 480px) {
-
   #header{
     display:flex;
     align-items:center;
@@ -534,15 +533,15 @@ font-weight: bold;
 
 /* 右上ボタン */
 .banner-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 8px 25px;
-  background: #f2b705;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 20px;
-  font-size: 20px;
+position: absolute;
+top: 20px;
+right: 20px;
+padding: 8px 25px;
+background: #f2b705;
+color: #fff;
+text-decoration: none;
+border-radius: 20px;
+font-size: 20px;
 box-shadow: 0 4px 0 #b98728;
 }
 
