@@ -378,23 +378,9 @@ display:block;
     font-size: 12px;
   }
 
-  .drawer-overlay{
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,.18);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .25s ease;
-    z-index: 1500;
-  }
-
   /* 開いた状態 */
   body.drawer-open .drawer{
-    transform: translateX(0);
-  }
-  body.drawer-open .drawer-overlay{
-    opacity: 1;
-    pointer-events: auto;
+  transform: translateX(0);
   }}
 
 @media (max-width: 480px) {
@@ -464,23 +450,9 @@ display:block;
     font-size: 12px;
   }
 
-  .drawer-overlay{
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,.18);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .25s ease;
-    z-index: 1500;
-  }
-
   /* 開いた状態 */
   body.drawer-open .drawer{
     transform: translateX(0);
-  }
-  body.drawer-open .drawer-overlay{
-    opacity: 1;
-    pointer-events: auto;
   }}
 
 .products-title h2{
@@ -2456,12 +2428,12 @@ margin-left: auto;
     padding: 0;
   }
 
-  .hamburger span{
-    width: 28px;
-    height: 2px;
-    background:#000;
-    display:block;
-  }}
+.hamburger span{
+width: 28px;
+height: 2px;
+background:#000;
+display:block;
+}}
 
 @media (max-width: 480px) {
 #header{
@@ -2471,19 +2443,18 @@ justify-content: space-between;
 padding: 0 20px;
 }
 
- 
-  .navi{
+.navi{
   display:none;
   }
 
-  /* カート＋ハンバーガー */
-  .header-right{
-  margin-right: 15px;
-  display: flex;
-  flex-direction: row;   
-  align-items: center;
-  gap: 13px;
-  }
+/* カート＋ハンバーガー */
+.header-right{
+margin-right: 15px;
+display: flex;
+flex-direction: row;   
+align-items: center;
+gap: 13px;
+}
 
 
   .cart-link img{
@@ -2576,23 +2547,9 @@ color: #999;
 font-size: 12px;
 }
 
-.drawer-overlay{
-position: fixed;
-inset: 0;
-background: rgba(0,0,0,.18);
-opacity: 0;
-pointer-events: none;
-transition: opacity .25s ease;
-z-index: 1500;
-}
-
 /* 開いた状態 */
 body.drawer-open .drawer{
 transform: translateX(0);
-}
-body.drawer-open .drawer-overlay{
-opacity: 1;
-pointer-events: auto;
 }}
 
 @media (min-width: 481px) and (max-width: 768px){
