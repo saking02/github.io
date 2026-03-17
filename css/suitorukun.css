@@ -34,6 +34,7 @@ position: fixed;
 top: 0;
 left: 0;
 z-index: 1000;
+font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 #header.logo{
@@ -1312,6 +1313,7 @@ background-color: #ffffff;
 padding: 70px 0 ;
 margin-top: 300px;
 position: relative;
+font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 .footer-inner{
