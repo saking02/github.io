@@ -461,6 +461,19 @@ display:block;
   transform: translateX(0);
   }}
 
+.products-title h2{
+    font-size: 40px;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.products-title p{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .banner {
   position: relative;
   max-width: 1000px;
