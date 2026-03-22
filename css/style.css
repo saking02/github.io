@@ -11,31 +11,33 @@ overflow-x: hidden;
 }
 
 .mainvisual{
-position: relative;
+  position: relative;
 }
 
 .mainvisual img{
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .mainvisual span{
-position: absolute;
-color: #ffffff;
-font-size: 40px;
-top: 800px;
-left:435px;
-background-color: rgba(255, 176, 49, 0.3);
-padding: 10px;
-padding-left: 60px;
-padding-right: 60px;
+  position: absolute;
+  right: 0%;                 /* ← 右寄せ */
+  bottom: 18%;               /* ← 下から位置調整（安定） */
+  color: #ffffff;
+font-size: clamp(20px, 3vw, 40px);
+  background-color: rgba(255, 176, 49, 0.3);
+  padding: 10px 60px;
+  text-align: right;         /* ← 文字も右揃え */
+  white-space: nowrap;       /* ← 改行防止（崩れ防止） */
 }
 
 .mainvisual p{
-position: absolute;
-color: #ffffff;
-font-size: 35px;
-top: 200px;
-left:100px;
+  position: absolute;
+  color: #ffffff;
+  top: 20%;
+  left: 5%;
+  font-size: clamp(20px, 3vw, 40px);
 }
 
 .wave-top{
@@ -459,250 +461,243 @@ display:block;
   transform: translateX(0);
   }}
 
-.products-title h2{
-font-size: 40px;
-align-items: center;
-text-align: center;
-margin-top: 150px;
-}
-
-.products-title p{
-font-size: 25px;
-text-align: center;
-margin-bottom: 40px;
-}
-
 .banner {
-position: relative;
-max-width: 1000px;
-margin: 0 auto;
-margin-bottom: 50px;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto 50px;
 }
 
 .banner img {
-width: 100%;
-display: block;
-z-index: 2;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
+/* タイトル */
 .banner-title {
-position: absolute;
-bottom: 120px;
-left: 30px;
-color: #fff;
-font-size: 40px;
-font-weight: bold;
+  position: absolute;
+  bottom: 25%;
+  left: 3%;
+  color: #fff;
+  font-size: clamp(22px, 4vw, 40px);
+  font-weight: bold;
 }
 
+/* サブテキスト */
 .banner-text {
-position: absolute;
-bottom: 75px;
-left: 30px;
-color: #fff;
-font-size: 25px;
+  position: absolute;
+  bottom: 18%;
+  left: 3%;
+  color: #fff;
+  font-size: clamp(14px, 2.5vw, 25px);
 }
 
+/* 価格 */
 .banner-price {
-position: absolute;
-bottom: 5px;
-right: 190px;
-color: #fff;
-font-size: 40px;
-font-weight: bold;
+  position: absolute;
+  bottom: 2%;
+  right:51%;
+  color: #fff;
+  font-size: clamp(22px, 4vw, 40px);
+  font-weight: bold;
 }
 
+/* ボタン */
 .banner-btn {
-position: absolute;
-top: 20px;
-right: 20px;
-padding: 8px 25px;
-background: #f2b705;
-color: #fff;
-text-decoration: none;
-border-radius: 20px;
-font-size: 20px;
-box-shadow: 0 4px 0 #b98728;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  padding: 0.5em 1.6em;
+  background: #f2b705;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: clamp(12px, 1.8vw, 20px);
+  box-shadow: 0 4px 0 #b98728;
 }
 
-.banner-btn::after{
-width: 5px;
-height: 5px;
-margin-left: 5px;
-content: ">";
+.banner-btn::after {
+  content: ">";
+  margin-left: 5px;
 }
 
-.banner-btn:hover{
-background-color: #fdc672;
-box-shadow: 0 2px 0 hsl(45, 100%, 69%);
+.banner-btn:hover {
+  background-color: #fdc672;
+  box-shadow: 0 2px 0 hsl(45, 100%, 69%);
 }
 
-.banner-wrap{
-position: relative;
-padding-top: 40px;
+.banner-wrap {
+  position: relative;
+  padding-top: 40px;
 }
 
-.banner-logo{
-position: absolute;
-width: 35%;
-top: 10px;
-left: 220px;
-z-index: 1;
+/* ロゴ */
+.banner-logo {
+  position: absolute;
+  width: clamp(180px, 35%, 500px);
+  top: 6%;
+  left: 15%;
+  z-index: 1;
 }
 
-img.banner-towel{
-position: absolute;
-bottom: 0px;
-right: 0px;
-width: 200px;
+/* タオル画像 */
+img.banner-towel {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: clamp(100px, 20%, 200px);
 }
 
 @media (min-width: 481px) and (max-width: 768px){
 .products-title h2{
-font-size:35px;
-margin-top: 150px;
+  font-size: clamp(24px, 4vw, 35px);
+  margin-top: 12%;
 }
 
 .products-title p{
-font-size: 20px;
-margin-bottom: 70px;
+  font-size: clamp(14px, 2.5vw, 20px);
+  margin-bottom: 8%;
 }
 
+/* タイトル */
 .banner-title {
-position: absolute;
-bottom: 100px;
-left: 30px;
-color: #fff;
-font-size: 30px;
-font-weight: bold;
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+  color: #fff;
+  font-size: clamp(20px, 4vw, 30px);
+  font-weight: bold;
 }
 
+/* テキスト */
 .banner-text {
-position: absolute;
-bottom: 70px;
-left: 30px;
-color: #fff;
-font-size: 20px;
+  position: absolute;
+  bottom: 16%;
+  left: 5%;
+  color: #fff;
+  font-size: clamp(14px, 2.5vw, 25px);
 }
 
+/* 価格 */
 .banner-price {
-position: absolute;
-bottom: 10px;
-left: 30px;
-color: #fff;
-font-size: 23px;
-font-weight: bold;
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+  color: #fff;
+  font-size: clamp(16px, 3vw, 23px);
+  font-weight: bold;
 }
 
-/* 右上ボタン */
+/* ボタン */
 .banner-btn {
-position: absolute;
-top: 20px;
-right: 20px;
-padding: 8px 25px;
-background: #f2b705;
-color: #fff;
-text-decoration: none;
-border-radius: 20px;
-font-size: 20px;
-box-shadow: 0 4px 0 #b98728;
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  padding: 0.6em 1.4em;
+  background: #f2b705;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: clamp(12px, 2vw, 18px);
+  box-shadow: 0 4px 0 #b98728;
 }
 
 .banner-btn::after{
-width: 5px;
-height: 5px;
-margin-left: 5px;
-content: ">";
+  content: ">";
+  margin-left: 5px;
 }
 
 .banner-btn:hover{
-background-color: #fdc672;
-box-shadow: 0 2px 0 hsl(45, 100%, 69%);
+  background-color: #fdc672;
+  box-shadow: 0 2px 0 hsl(45, 100%, 69%);
 }
 
 .banner-wrap{
-position: relative;
-padding-top: 40px;
+  position: relative;
+  padding-top: 5%;
 }
 
+/* ロゴ */
 .banner-logo{
-position: absolute;
-width: 50%;
-top: 30px;
-left: 0px;
-z-index: 1;
+  position: absolute;
+   width: clamp(180px, 50%, 300px);
+  top: 60%;
+  left: 2%;
+  z-index: 1;
 }
-  
+
+/* タオル */
 img.banner-towel{
-position:absolute;
-right:0;
-bottom:0;
-width:30%;
-max-width:110px;
+  position:absolute;
+  right:0;
+  bottom:0;
+  width: 30%;
+  max-width:110px;
 }}
 
 @media (max-width:480px){
 .banner {
-position: relative;
-max-width: 1000px;
-margin: 0 auto;
-margin-bottom: 0px;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 0px;
 }
 
 .products-title h2{
-font-size: 28px;
-margin-top: 130px;
+    font-size: 28px;
+    margin-top: 130px;
 }
 
 .products-title p{
-font-size: 18px;
-margin-bottom: 40px;
+  font-size: 18px;
+  margin-bottom: 40px;
 }
 
 .banner-title {
-position: absolute;
-bottom: 70px;
-left: 30px;
-color: #fff;
-font-size: 20px;
-font-weight: bold;
+  position: absolute;
+  bottom: 70px;
+  left: 30px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .banner-text {
-position: absolute;
-bottom: 45px;
-left: 30px;
-color: #fff;
-font-size: 16px;
+  position: absolute;
+  bottom: 45px;
+  left: 30px;
+  color: #fff;
+  font-size: 16px;
 }
-  
+
 .banner-price {
-position: absolute;
-bottom: 10px;
-left: 30px;
-color: #fff;
-font-size: 13px;
-font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+ left: 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /* 右上ボタン */
 .banner-btn {
-position: absolute;
-top:6px;
-right: 6px;
-padding: 5px 10px;
-background: #f2b705;
-color: #fff;
-text-decoration: none;
-border-radius: 20px;
-font-size: 12px;
+  position: absolute;
+  top:6px;
+  right: 6px;
+  padding: 5px 10px;
+  background: #f2b705;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 12px;
 box-shadow: 0 3px 0 #b98728;
 }
 
 .banner-btn::after{
-width: 5px;
-height: 5px;
-margin-left: 5px;
-content: ">";
+ width: 5px;
+    height: 5px;
+    margin-left: 5px;
+  content: ">";
 }
 
 .banner-btn:hover{
@@ -714,12 +709,12 @@ content: ">";
 position: relative;
 padding-top: 40px;
 }
-
+  
 .banner-logo{
-position: absolute;
-width: 50%;
-top: 30px;
-left: 0px;
+  position: absolute;
+  width: 50%;
+  top: 30px;
+ left: 0px;
 z-index: 1;
 }
   
@@ -735,15 +730,16 @@ img.banner-towel{
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   padding: 40px;
   gap: 50px;
-  margin-bottom: 100px;
 }
 
 .sideber{
-  flex: 0 0 450px;   
+  flex: 1 1 350px;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -751,8 +747,8 @@ img.banner-towel{
 
 .title-circle{
   background-color: #FFEDDC;
-  width: 400px;
-  height: 400px;
+  width: min(400px, 100%);
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -762,55 +758,53 @@ img.banner-towel{
 }
 
 .title-circle p{
-font-size: 30px;
-line-height: 1.3;
-margin-bottom: 10px;
+  font-size: clamp(20px, 2.2vw, 30px);
+  line-height: 1.3;
+  margin-bottom: 10px;
 }
 
 .line{
-  width: 300px;
+  width: 75%;
   height: 1px;
   background-color: #000000;
   margin-top: 5px;
 }
 
 .title-circle .more-link{
-display: block;
-margin-left: auto;
-margin-right: auto;
-text-align: center;
-width: fit-content;
-margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: fit-content;
+  margin-top: 30px;
 }
 
-/* 右側のリストを3列にする */
 .products-grid{
-  flex: 0 0 800px;        
+  flex: 1 1 600px;
   max-width: 900px;
   width: 100%;
-  padding-left: 0;        
+  padding-left: 0;
   margin: 50px 0 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap:  40px 20px;
+  gap: 40px 20px;
 }
 
-.product-item img {
-    width: 90%;
-    height: auto;
-    display: block;
-    margin-bottom: 5px;
-    border: 1px solid #000000;
+.product-item img{
+  width: 90%;
+  height: auto;
+  display: block;
+  margin-bottom: 5px;
+  border: 1px solid #000000;
 }
 
 .giftbox{
 background-color:#fe9191;
-padding: 90px;
-position: relative;
-overflow: visible;
+ padding: 90px;
+ position: relative;
+ overflow: visible;
 z-index: 2;
-padding-bottom: 10px;
-}
+ padding-bottom: 10px;}
 
 .wave{
   position: absolute;
@@ -850,11 +844,11 @@ padding-bottom: 10px;
 }
 
 .products-grid{
-flex: none;
-width: 100%;
-max-width: 500px;
-grid-template-columns: repeat(2, 1fr);
-gap: 30px 80px;
+  flex: none;
+  width: 100%;
+  max-width: 500px;
+  grid-template-columns: repeat(2, 1fr);
+ gap: 30px 80px;
 }
 
 .product-item p{
@@ -869,14 +863,15 @@ gap: 30px 80px;
 }}
 
 @media (max-width:480px){
-.container{
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 50px 20px;
-gap: 0px;
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 0px;
 margin-bottom: 100px;
-}
+  }
 
   .sideber{
    flex: none;
@@ -1793,7 +1788,7 @@ z-index: 1;
   padding: 250px 50px 50px;
   background: #FFF7EA;
   position: relative;
-  margin-top: -60px;
+  margin-top: -40px;
 }
 
 .inner {
