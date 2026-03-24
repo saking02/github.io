@@ -51,89 +51,88 @@ z-index: 1;
 }
 
 @media (min-width: 481px) and (max-width: 768px){
-.mainvisual span{
-font-size: 25px;  
-top: 75%;  
-left: 21% ;
-padding: 8px 10px;
-}
+  .mainvisual{
+    position: relative;
+  }
 
-.mainvisual p{
-font-size: 25px;
-top: 15%;
-left:5%;
-}
+  .mainvisual img{
+    width: 100%;
+    height: clamp(520px, 85svh, 700px);
+    display: block;
+    object-fit: cover;
+  }
 
-.mainvisual img{
-width: 100%;
-height: 90vh;
-display: block;
-object-fit: cover;  
-}
+  .mainvisual span{
+    position: absolute;
+    right: 0;
+    bottom: clamp(12%, 15vw, 18%);
+    color: #ffffff;
+  font-size: clamp(20px, 3vw, 36px);
+    background-color: rgba(255, 176, 49, 0.3);
+    padding: clamp(6px, 1vw, 10px) clamp(16px, 3vw, 40px);
+    text-align: right;
+    white-space: nowrap;
+    display: inline-block; /* ← 重要 */
+  }
 
-.wave-top{
-height: 70px;     
-bottom: -30px;
-}}
+  .mainvisual p{
+    position: absolute;
+    color: #ffffff;
+    top: clamp(12%, 15vw, 20%);
+    left: clamp(4%, 6vw, 8%);
+  font-size: clamp(20px, 3vw, 36px);
+    line-height: 1.4;
+  }
+
+  .wave-top{
+    height: 70px;     
+    bottom: -30px;
+  }}
 
 @media (max-width: 480px){
-.mainvisual{
-position: relative;
-}
+  .mainvisual{
+    position: relative;
+  }
 
-.mainvisual .img{
-position: relative;
-}
+  .mainvisual img{
+    width: 100%;
+    height: clamp(400px, 75svh, 600px);
+    display: block;
+    object-fit: cover;
+  }
 
-.mainvisual img{
-width: 100%;
-height: 65vh;
-display: block;
-object-fit: cover;  
-}
+  .mainvisual span{
+    position: absolute;
+    right: 0;
+    bottom: clamp(15%, 16vw, 20%);
+    color: #ffffff;
+    font-size: clamp(15px, 3vw, 24px);
+    background-color: rgba(255, 176, 49, 0.3);
+    padding: clamp(5px, 1vw, 8px) clamp(12px, 3vw, 24px);
+    text-align: right;
+    white-space: nowrap;
+    display: inline-block;
+  }
 
-.mainvisual p{
-position: absolute;
-top: 13%;
-left: 6%;
-margin: 0;
-color: #fff;
-font-size: 18px;
-line-height: 1.6;
-letter-spacing: 0.05em;
-width: 88%;
-text-align: left;
-}
+  .mainvisual p{
+    position: absolute;
+    color: #ffffff;
+    top: clamp(20%, 14vw, 18%);
+    left: clamp(4%, 6vw, 8%);
+    font-size: clamp(15px, 3vw, 24px);
+    line-height: 1.4;
+    white-space: nowrap;
+  }
 
-  /* 下の文字 */
-.mainvisual span{
-position: absolute;
-left: 56%;
-top: 75%;
-transform: translateX(-50%);
-display: inline-block;
-margin: 0;
-color: #fff;
-font-size: 18px;
-line-height: 1.5;
-letter-spacing: 0.03em;
-text-align: center;
-width: 88%;
-background-color: rgba(255, 176, 49, 0.28);
-padding: 5px 2px;
-box-sizing: border-box;
-z-index: 3;
-}
-
-.wave-top{
-position: absolute;
-bottom: -18px;
-left: 0;
-width: 100%;
-height: 48px;
-fill: #FFF7E9;
-z-index: 1;
-}}
+  .wave-top{
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    fill: #FFF7E9;
+    z-index: 1;
+  }}
 
 html{
 font-size: 100%;
