@@ -1133,6 +1133,7 @@ font-size: 20px;
   bottom: -100px;
 }}
 
+
 .about {
   background: #fff7ed;
   padding-bottom: 120px;
@@ -1202,6 +1203,7 @@ font-size: 20px;
   margin-right: clamp(16px, 4vw, 36px);
 }
 
+
 /* 右側の画像エリア全体 */
 .about-right {
   display: flex;
@@ -1218,21 +1220,28 @@ font-size: 20px;
   align-self: flex-end;
 }
 
+
 .paws-img2 {
     width: 60%;             
     margin-top: 100px;       
     display: block;
     margin-left: auto;
     margin-right: auto;
+  
     transform: translateX(40px); 
 }
-
+/* =========================
+  ブランド名
+========================= */
 .brand{
   font-size: clamp(28px, 3vw, 50px);
   margin-bottom: 30px;
   text-align: center;
 }
 
+/* =========================
+  サブコピー
+========================= */
 .brand-copy{
   margin-bottom: clamp(40px, 8vw, 100px);
   font-size: clamp(16px, 2vw, 30px);
@@ -1240,6 +1249,9 @@ font-size: 20px;
   line-height: 1.6;
 }
 
+/* =========================
+  見出し（便利・快適など）
+========================= */
 .concept-item h4{
   display: flex;
   align-items: baseline;
@@ -1247,18 +1259,21 @@ font-size: 20px;
   font-size: clamp(18px, 2vw, 30px);
 }
 
+/* 英語部分 */
 .concept-item span{
   font-size: clamp(16px, 1.8vw, 30px);
   margin-left: 10px;
   font-weight: normal;
 }
 
+/* =========================
+  説明文
+========================= */
 .concept-item p{
   line-height: 1.7;
   font-size: clamp(14px, 1.6vw, 18px);
   margin-bottom: 20px;
 }
-
 .paws-img2 {
 width: 60%;             
 margin-top: 100px;       
