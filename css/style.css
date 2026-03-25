@@ -1255,7 +1255,7 @@ font-size: 20px;
 
 .concept-item p{
   line-height: 1.7;
-  font-size: clamp(14px, 1.6vw, 20px);
+  font-size: clamp(14px, 1.6vw, 18px);
   margin-bottom: 20px;
 }
 
