@@ -22,14 +22,14 @@ overflow-x: hidden;
 
 .mainvisual span{
   position: absolute;
-  right: 0%;                 /* ← 右寄せ */
-  bottom: 18%;               /* ← 下から位置調整（安定） */
+  right: 0%;               
+  bottom: 18%;             
   color: #ffffff;
 font-size: clamp(20px, 3vw, 40px);
   background-color: rgba(255, 176, 49, 0.3);
   padding: 10px 60px;
-  text-align: right;         /* ← 文字も右揃え */
-  white-space: nowrap;       /* ← 改行防止（崩れ防止） */
+  text-align: right;       
+  white-space: nowrap;      
 }
 
 .mainvisual p{
@@ -1228,9 +1228,7 @@ font-size: 20px;
   
     transform: translateX(40px); 
 }
-/* =========================
-  ブランド名
-========================= */
+
 .brand{
   font-size: clamp(28px, 3vw, 50px);
   margin-bottom: 30px;
@@ -1247,9 +1245,6 @@ font-size: 20px;
   line-height: 1.6;
 }
 
-/* =========================
-  見出し（便利・快適など）
-========================= */
 .concept-item h4{
   display: flex;
   align-items: baseline;
@@ -1257,16 +1252,14 @@ font-size: 20px;
   font-size: clamp(18px, 2vw, 30px);
 }
 
-/* 英語部分 */
+
 .concept-item span{
   font-size: clamp(16px, 1.8vw, 30px);
   margin-left: 10px;
   font-weight: normal;
 }
 
-/* =========================
-  説明文
-========================= */
+
 .concept-item p{
   line-height: 1.7;
   font-size: clamp(14px, 1.6vw, 16px);
@@ -1534,9 +1527,6 @@ padding: 150px 0px;
   position: relative;
 }
 
-/* ---------------------------
-   PCタイトル位置
---------------------------- */
 .passion-title{
   color: #FF6662;
   font-size: 50px;
@@ -1566,9 +1556,6 @@ padding: 150px 0px;
   display: none;
 }
 
-/* =========================
-  シェイプ全体（可変）
-========================= */
 .passion-shape,
 .ourvision-shape{
   max-width: min(800px, 90%);
@@ -1577,9 +1564,6 @@ padding: 150px 0px;
   border-radius: 70% 38% 63% 37% / 40% 60% 40% 60%;
 }
 
-/* =========================
-  タイトル
-========================= */
 .passion-title,
 .ourvision-title{
   font-size: clamp(24px, 3.5vw, 40px);
@@ -1588,9 +1572,6 @@ padding: 150px 0px;
   white-space: nowrap; /* ← 折り返し防止 */
 }
 
-/* =========================
-  テキスト
-========================= */
 .passion-shape p,
 .ourvision-shape p{
   width: 100%;
@@ -1602,9 +1583,6 @@ padding: 150px 0px;
   text-align: center;
 }
 
-/* =========================
-  テキストボックス幅
-========================= */
 .passion-text,
 .ourvision-text{
   width: 100%;
@@ -1612,15 +1590,14 @@ padding: 150px 0px;
 }
 
 .passion-shape{
-  position: relative; /* ← 親にこれ必要 */
+  position: relative; 
 }
 
 .passion-title{
   position: absolute;
-  top: 100px;   /* ← 上からの位置 */
+  top: 100px; 
   left: 40%;
   transform: translateX(-50%);
-  font-size: clamp(30px, 4vw, 40px);
 }
 
 @media (min-width: 481px) and (max-width: 768px){
@@ -1860,7 +1837,6 @@ padding: 150px 0px;
     position: static;
   }
 
-  /* 白カード */
   .passion-shape,
   .ourvision-shape{
     width: 100%;
