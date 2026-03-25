@@ -1135,11 +1135,6 @@ font-size: 20px;
 
 .about {
   background: #fff7ed;
-  padding-bottom: 120px;
-}
-
-.about {
-  background: #fff7ed;
   padding-bottom: clamp(60px, 8vw, 120px);
 }
 
@@ -1165,22 +1160,26 @@ font-size: 20px;
   display: flex;
   justify-content: space-between;
   gap: clamp(20px, 4vw, 60px);
+  align-items: flex-start;
 }
 
 .about-left {
-  width: 110%;
+  width: 100%; /* ← 110%をやめる */
   margin-top: clamp(30px, 6vw, 80px);
 }
 
 .cpet-bg {
   background: #fde3c8;
-  padding: clamp(60px, 10vw, 110px) clamp(30px, 10vw, 120px);
+  padding: clamp(60px, 10vw, 110px) clamp(30px, 6vw, 80px); /* ← 横余白を少し安定 */
+  box-sizing: border-box;
 }
 
 .cpet-content {
   max-width: 800px;
-  margin-left: 0;
+  width: 100%;
+  margin: 0 auto; /* ← 中央に置く */
   text-align: left;
+  box-sizing: border-box;
 }
 
 /* アイコンと文字ボックスを横に並べる */
@@ -1188,18 +1187,28 @@ font-size: 20px;
   display: flex;
   align-items: flex-start;
   margin-bottom: clamp(24px, 5vw, 36px);
+  gap: clamp(14px, 3.5vw, 32px); /* ← margin-rightの代わりにgapで安定 */
 }
 
-.icon, .icon2 {
+.icon,
+.icon2 {
   width: clamp(32px, 4.5vw, 55px);
   height: auto;
-  margin-right: clamp(14px, 3.5vw, 32px);
   flex-shrink: 0;
+  display: block;
+  margin-right: 0;
 }
 
 .icon2{
   width: clamp(28px, 4vw, 45px);
-  margin-right: clamp(16px, 4vw, 36px);
+}
+
+/* concept-itemの中の文字側をちゃんと縮められるようにする */
+.concept-item > div,
+.concept-item-text,
+.concept-item-body {
+  flex: 1;
+  min-width: 0;
 }
 
 /* 右側の画像エリア全体 */
@@ -1209,22 +1218,23 @@ font-size: 20px;
   align-items: center;
   position: relative;
   z-index: 2;
-  margin-left: -140px;
+  margin-left: -80px; /* ← -140px だと影響が強すぎるので弱める */
 }
 
 .about-right img:first-child {
   width: 90%;
   height: auto;
   align-self: flex-end;
+  display: block;
 }
 
 .paws-img2 {
-    width: 60%;             
-    margin-top: 100px;       
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateX(40px); 
+  width: 60%;
+  margin-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(40px);
 }
 
 /* =========================
@@ -1252,8 +1262,10 @@ font-size: 20px;
 .concept-item h4{
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
   margin-bottom: 10px;
   font-size: clamp(18px, 2vw, 30px);
+  line-height: 1.4;
 }
 
 /* 英語部分 */
@@ -1270,6 +1282,7 @@ font-size: 20px;
   line-height: 1.7;
   font-size: clamp(14px, 1.6vw, 17px);
   margin-bottom: 20px;
+  max-width: 34em; /* ← 行幅を安定させる */
 }
 
 @media (min-width: 481px) and (max-width: 768px){
