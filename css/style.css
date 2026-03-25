@@ -956,50 +956,47 @@ padding-left: 0px;
 }
 
 .giftbox-img{
-flex: 1;
-text-align: right;
-margin-left: auto; 
+  flex: 1;
+  text-align: right;
+  margin-left: auto;
 }
 
 .giftbox-img img{
-width: 100%;
-height: auto;
-display: block;
-margin-right: 0;
-padding: 1rem 1rem 1.5rem;
-background:
-linear-gradient(135deg, #a0dce4 0 100%),
-repeating-linear-gradient(45deg, #a0dce4 0px 3px, transparent 3px 6px);
-background-repeat: no-repeat;
-background-size: calc(100% - 0.5rem) calc(100% - 0.5rem);
-background-position: 0 0, 0.5rem 0.5rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-right: 0;
+  padding: 1rem 1rem 1.5rem;
+  background:
+  linear-gradient(135deg, #a0dce4 0 100%),
+  repeating-linear-gradient(45deg, #a0dce4 0px 3px, transparent 3px 6px);
+  background-repeat: no-repeat;
+  background-size: calc(100% - 0.5rem) calc(100% - 0.5rem);
+  background-position: 0 0, 0.5rem 0.5rem;
 }
 
 .giftbox-title h2{
-color: #fff4f4;
-font-size: 50px;
-margin-left: 0px;
+  color: #fff4f4;
+  font-size: clamp(40px, 4vw, 50px);
 }
 
 .giftbox-title p{
-color: #fffdfd;
-font-size: 25px;
-margin-left: 10px;
-} 
+  color: #fffdfd;
+  font-size: clamp(16px, 2vw, 25px);
+}
 
 .text-content p{
-color: #ffffff;
-margin-top: 50px;
-font-size: 25px;
-margin-left: 0px;
+  color: #ffffff;
+  margin-top: 50px;
+  font-size: clamp(18px, 2vw, 25px);
 }
 
 .more-link{
-text-decoration: none;
-color: #000;
-font-size: 20px;
-margin-top: 60px;
-margin-left: 60%;
+  text-decoration: none;
+  color: #000;
+  font-size: clamp(18px, 1.5vw, 20px);
+  margin-top: 60px;
+  margin-left: 60%;
 }
 
 .planePath {
