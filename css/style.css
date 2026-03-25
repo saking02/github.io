@@ -1210,7 +1210,7 @@ font-size: 20px;
   align-items: center;
   position: relative;
   z-index: 2;
-  margin-left: -140px;
+  margin-left: -130px;
 }
 
 .about-right img:first-child {
@@ -1269,7 +1269,7 @@ font-size: 20px;
 ========================= */
 .concept-item p{
   line-height: 1.7;
-  font-size: clamp(14px, 1.6vw, 18px);
+  font-size: clamp(14px, 1.6vw, 16px);
   margin-bottom: 20px;
 }
 
