@@ -1272,14 +1272,7 @@ font-size: 20px;
   margin-bottom: 20px;
 }
 
-.paws-img2 {
-width: 60%;             
-margin-top: 100px;       
-display: block;
-margin-left: auto;
-margin-right: auto;
-transform: translateX(40px); 
-}
+
 
 @media (min-width: 481px) and (max-width: 768px){
 .about{
