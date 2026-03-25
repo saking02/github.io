@@ -1138,106 +1138,124 @@ font-size: 20px;
   padding-bottom: 120px;
 }
 
-.about-title {
-  max-width: 1100px;
-  margin: 240px 100px 40px 100px;
-  font-size: 50px;
-  color: #d48b8b;
+.about {
+  background: #fff7ed;
+  padding-bottom: clamp(60px, 8vw, 120px);
 }
 
-.about-title span {
+.about-title{
+  max-width: 1100px;
+  margin: clamp(140px, 15vw, 320px) clamp(20px, 4vw, 60px) clamp(20px, 4vw, 40px);
+  padding: 0 clamp(0px, 2vw, 10px);
+  font-size: clamp(28px, 4vw, 50px);
+  color: #d48b8b;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.about-title span{
   display: block;
-  font-size: 25px;
+  font-size: clamp(14px, 2vw, 25px);
   letter-spacing: 0.1em;
-  margin-bottom: 100px;
+  margin-bottom: clamp(40px, 8vw, 100px);
 }
 
 .about-row {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(20px, 4vw, 60px);
 }
 
 .about-left {
   width: 110%;
-  margin-top: 80px;
+  margin-top: clamp(30px, 6vw, 80px);
 }
-
 .cpet-bg {
   background: #fde3c8;
-  padding: 100px 100px  ;
+  padding: clamp(60px, 10vw, 110px) clamp(30px, 10vw, 120px);
 }
 
 .cpet-content {
-max-width: 800px;
-margin-left: 0px;
-text-align: left;
-}
-
-.brand {
-  font-size: 50px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.brand-copy {
-  margin-bottom: 100px;
-  font-size: 30px;
-  text-align: center;
+  max-width: 800px;
+  margin-left: 0;
+  text-align: left;
 }
 
 /* アイコンと文字ボックスを横に並べる */
 .concept-item {
   display: flex;
-  align-items: flex-start; 
-  margin-bottom: 30px;
+  align-items: flex-start;
+  margin-bottom: clamp(24px, 5vw, 36px);
 }
 
 .icon, .icon2 {
-  width: 50px;     
+  width: clamp(32px, 4.5vw, 55px);
   height: auto;
-  margin-right: 30px; 
-  flex-shrink: 0;  
+  margin-right: clamp(14px, 3.5vw, 32px);
+  flex-shrink: 0;
 }
 
 .icon2{
-  width: 40px; 
-  margin-right: 35px; 
-}
-
- .concept-item h4 {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 20px;
-  font-size: 30px;
-}
-
-.concept-item span {
-  font-size: 30px;
-  margin-left: 10px;
-  font-weight: normal;
-}
-
-.concept-item p {
-  line-height: 1.5;
-  font-size: 20px;
-  margin-bottom: 30px;
-
+  width: clamp(28px, 4vw, 45px);
+  margin-right: clamp(16px, 4vw, 36px);
 }
 
 /* 右側の画像エリア全体 */
 .about-right {
-display: flex;
-flex-direction: column; 
-align-items: center;   
-position: relative;
-z-index: 2;
-margin-left: -130px;    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin-left: -140px;
 }
 
 .about-right img:first-child {
-width: 90%;           
-height: auto;
-align-self: flex-end;   
+  width: 90%;
+  height: auto;
+  align-self: flex-end;
+}
+
+.paws-img2 {
+    width: 60%;             
+    margin-top: 100px;       
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(40px); 
+}
+
+.brand{
+  font-size: clamp(28px, 3vw, 50px);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.brand-copy{
+  margin-bottom: clamp(40px, 8vw, 100px);
+  font-size: clamp(16px, 2vw, 30px);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.concept-item h4{
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+  font-size: clamp(18px, 2vw, 30px);
+}
+
+.concept-item span{
+  font-size: clamp(16px, 1.8vw, 30px);
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+.concept-item p{
+  line-height: 1.7;
+  font-size: clamp(14px, 1.6vw, 20px);
+  margin-bottom: 20px;
 }
 
 .paws-img2 {
@@ -1255,16 +1273,17 @@ padding: 150px 0px;
 }
 
 .about-title {
-  margin: 120px 20px 40px 30px;
-  font-size: 40px;
+  margin: clamp(80px, 10vw, 120px) clamp(10px, 4vw, 20px) clamp(20px, 4vw, 40px) clamp(10px, 5vw, 30px);
+  font-size: clamp(30px, 5vw, 40px);
   color: #d48b8b;
+  line-height: 1.4;
 }
 
 .about-title span {
   display: block;
-  font-size: 25px;
+  font-size: clamp(18px, 2.5vw, 25px);
   letter-spacing: 0.1em;
-  margin-bottom: px;
+  margin-bottom: clamp(30px, 6vw, 80px); /* ← 修正 */
 }
 
 .about-row{
@@ -1291,11 +1310,12 @@ padding: 150px 0px;
 }
 
 .brand{
-  font-size: 35px;
+  font-size: clamp(26px, 4vw, 35px);
 }
 
 .brand-copy{
-  font-size: 25px;
+  font-size: clamp(18px, 3vw, 25px);
+  line-height: 1.6;
 }
 
 .concept-item{
@@ -1328,17 +1348,19 @@ padding: 150px 0px;
   padding: 200px 0 80px;
   }
 
-  .about-title{
-    margin: 0 20px 30px;
-    font-size: 28px;
-    text-align: center;
-  }
+.about-title{
+  margin: 0 clamp(15px, 5vw, 20px) clamp(20px, 5vw, 30px);
+  font-size: clamp(25px, 4.5vw, 28px);
+  text-align: center;
+  line-height: 1.4;
+}
 
-  .about-title span{
-    font-size: 18px;
-    margin-bottom: 80px;
-  }
-
+.about-title span{
+  display: block;
+  font-size: clamp(16px, 3vw, 18px);
+  margin-bottom: clamp(40px, 10vw, 80px);
+}
+  
   .about-row{
     display: flex;
     flex-direction: column;
@@ -1375,78 +1397,74 @@ padding: 150px 0px;
     text-align: center;
   }
 
-  .brand{
-    font-size: 32px;
-    margin-bottom: 15px;
-  }
-
-  .brand-copy{
-    font-size: 18px;
-    margin-bottom: 40px;
-    line-height: 1.6;
-  }
-
-  .concept-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 35px;
-  }
-
-  .icon,
-  .icon2{
-    width: 42px;
-    height: auto;
-    margin-right: 0;
-    margin-bottom: 12px;
-  }
-
-  .icon2{
-    width: 36px;
-  }
-
-  .concept-item h4{
-    display: block;
-    margin-bottom: 12px;
-    font-size: 22px;
-  }
-
-  .concept-item span{
-    display: block;
-    font-size: 16px;
-    margin-left: 0;
-    margin-top: 4px;
-  }
-
-  .concept-item p{
-    font-size: 15px;
-    line-height: 1.8;
-    margin-bottom: 0;
-  }}
-
-.philosophy{
-  padding: 0 20px 100px;
-  overflow-x: hidden;
+.brand{
+  font-size: clamp(24px, 5vw, 32px);
+  margin-bottom: clamp(20px, 4vw, 40px);
 }
+
+.brand-copy{
+  font-size: clamp(14px, 3.5vw, 18px);
+  margin-bottom: clamp(40px, 8vw, 80px);
+  line-height: 1.6;
+}
+  
+ 
+.concept-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: clamp(24px, 6vw, 35px);
+}
+
+.icon,
+.icon2{
+  width: clamp(32px, 6vw, 42px);
+  height: auto;
+  margin-right: 0;
+  margin-bottom: clamp(8px, 2vw, 12px);
+}
+
+.icon2{
+  width: clamp(28px, 5vw, 36px);
+}
+
+.concept-item h4{
+  display: block;
+ margin-bottom: clamp(10px, 2.5vw, 20px);
+  font-size: clamp(18px, 4vw, 22px);
+  line-height: 1.4;
+}
+
+.concept-item span{
+  display: block;
+  font-size: clamp(14px, 3.5vw, 16px);
+  margin-left: 0;
+  margin-top: 4px;
+}
+
+.concept-item p{
+  font-size: clamp(14px, 3.5vw, 15px);
+  line-height: 1.8;
+  margin-bottom: clamp(12px, 3vw, 24px);
+}}
 
 .philosophy-title{
   max-width: 1200px;
-  margin: 100px 0 40px;
-  padding: 0 100px;
+  margin: clamp(60px, 8vw, 100px) auto clamp(20px, 4vw, 40px);
+  padding: 0 clamp(10px, 6vw, 20px);
   text-align: left;
+  box-sizing: border-box;
 }
 
 .philosophy-title h2{
-  font-size: 45px;
+  font-size: clamp(24px, 3.5vw, 45px);
   color: #d48b8b;
   line-height: 1.5;
   margin: 0;
+  white-space: nowrap;
 }
 
-/* ---------------------------
-   共通
---------------------------- */
 .passion,
 .ourvision{
   position: relative;
